@@ -38,11 +38,10 @@ First of all, we need to download all necessary data for  simulation. In our stu
 ! tar -xvzf ALL_1000G_phase1integrated_v3_impute.tgz
 ```
 
-After downloading all the necessary files, we unzip them and get a big amount of files:
+After downloading all the necessary files, we unzip them and get a big amount of files.
 
-![Untitled](Simulation%20of%20genotype-phenotype%20for%20different%20pop%20bd860396e0c748fc9389028068de0706/Untitled.png)
 
-This file is a gzipped tar archive and contains 4 kinds of files :
+The files are a gzipped tar archive and contains 4 kinds of files :
 
 1. ***.hap.gz** (one file per autosome) -- Phased haplotype file in IMPUTE -h format.
 
@@ -76,11 +75,7 @@ Since every file is heavy weighted, we **settled** on chromosome 21. The files w
 
 *genetic_map_chr21_combined_b37.txt*
 
-It is worth mentioning, firstly we decided to split the dataset into three populations - European, African and Asian. As we simulate genotypes for different populations, we need to check coordinates of each population in the sample file. The structure of the sample file:
-
-![Untitled](Simulation%20of%20genotype-phenotype%20for%20different%20pop%20bd860396e0c748fc9389028068de0706/Untitled%201.png)
-
-In the file we can see a population and a group. Since we have very limited resources, our simulation is based on a group, not on a population. There are 5 groups in the sample file, we choose only 3 groups - European, Asian and African. To split the 21 chromosome genotype file, we use the coordinates of each group in the sample file and then run this:
+It is worth mentioning, firstly we decided to split the dataset into three populations - European, African and Asian. As we simulate genotypes for different populations, we need to check coordinates of each population in the sample file. In the file we can see a population and a group. Since we have very limited resources, our simulation is based on a group, not on a population. There are 5 groups in the sample file, we choose only 3 groups - European, Asian and African. To split the 21 chromosome genotype file, we use the coordinates of each group in the sample file and then run this:
 
 For European group:
 
@@ -197,13 +192,6 @@ After running the commands, as an output we get 5 files, 2 of them are needed fo
 
 We generated these files for each population.
 
-The example of *controls.gen* - 
-
-![Untitled](Simulation%20of%20genotype-phenotype%20for%20different%20pop%20bd860396e0c748fc9389028068de0706/Untitled%202.png)
-
-The example of *controls.sample* - 
-
-![Untitled](Simulation%20of%20genotype-phenotype%20for%20different%20pop%20bd860396e0c748fc9389028068de0706/Untitled%203.png)
 
 ## PhenotypeSimulator
 
@@ -282,8 +270,6 @@ rho, delta and phi has to be equal 1 |
 | **seed**  | Seed to initiate random number generation |
 
 After running all these commands for every group, we get exact files for every group. 
-
-![Untitled](Simulation%20of%20genotype-phenotype%20for%20different%20pop%20bd860396e0c748fc9389028068de0706/Untitled%204.png)
 
 We don’t need all these files, only some of them.
 
