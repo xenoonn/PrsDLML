@@ -638,12 +638,7 @@ The metrics **when the model learned on one population predicts another one**:
 
 The first one is the population, on which the model was learned, the second one is the population what the model predicts. 
 
-![Untitled](Simulation%20of%20genotype-phenotype%20for%20different%20pop%20bd860396e0c748fc9389028068de0706/Untitled%205.png)
-
-The metrics when the model is learned on **all populations** and predicts one population:
-
-![Untitled](Simulation%20of%20genotype-phenotype%20for%20different%20pop%20bd860396e0c748fc9389028068de0706/Untitled%206.png)
-
+Result tables can be seen in text.pdf
 ## SimulatePhenotypes from HapGen
 
 *In process…*
