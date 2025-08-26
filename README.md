@@ -1,4 +1,13 @@
-# Simulation of genotype-phenotype for different populations
+# Simulation of genotype-phenotype for different populations and PRS Prediction
+
+# Abstract 
+Background: Polygenic risk prediction is highly sensitive to population structure, yet most deep learning (DL) studies evaluate single-ancestry cohorts. We investigate how ancestry affects the performance and transferability of DL and machine learning (ML) models for genotype-based risk prediction on simulated multi-ancestry data.
+
+Methods: Using HapMap3 reference haplotypes and HapGen2, we simulated genotypes for three populations—European (EUR), African (AFR), and East Asian (EAS)—with 5,000 individuals each. Phenotypes were generated with PhenotypeSimulator, selecting 30,000 SNPs with identical causal configurations across populations (fixed seed). Per-population GWAS (PLINK) was used to preselect SNPs (p < 0.05). We trained Logistic Regression, Gradient Boosting, Random Forest, SVM, and DL architectures (MLP, CNN, RNN, CNN+RNN). Performance was assessed by ROC-AUC, accuracy, F1, precision, and recall. PCA confirmed clear population stratification.
+
+Results: Within-ancestry prediction was strong across all three cohorts. The MLP achieved ROC-AUCs of 0.891 (EUR), 0.889 (AFR), and 0.868 (EAS), with SVM highly competitive and best on AFR (ROC-AUC 0.896). Random Forest underperformed (max ROC-AUC 0.647). In sharp contrast, cross-ancestry transfer was near random (ROC-AUC ≈ 0.48–0.54) regardless of model class, underscoring poor portability across populations despite shared causal architecture in simulation.
+
+Conclusions: DL and strong ML baselines deliver high accuracy within ancestry but fail to generalize across ancestries, highlighting the critical need for ancestry-aware or multi-ancestry training and methods that explicitly model cross-population LD and effect-size heterogeneity. Future work should compare against state-of-the-art summary-statistics methods (e.g., PRS-CSx/SDPRX), test unified SNP sets, and validate on real data
 
 # Introduction
 
