@@ -630,15 +630,11 @@ All previous steps we make for all groups - European, African and East Asian.
 
 Finally, we get necessary files for ML algorithms.
 
-Code for Machine Learning is kinda large, and that’s why only the metrics are presented, but it’s available here:
+Code for Machine Learning is kinda large but it’s available here:
 
 [Google Colaboratory](https://colab.research.google.com/drive/1LepiYd-p9VvkcG22C3SScCYTrYaQaI2b?usp=sharing)
 
-The metrics **when the model learned on one population predicts another one**:
-
-The first one is the population, on which the model was learned, the second one is the population what the model predicts. 
-
-Result tables can be seen in text.pdf
+Results tables can be seen in text.pdf
 ## SimulatePhenotypes from HapGen
 
 *In process…*
