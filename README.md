@@ -639,10 +639,6 @@ All previous steps we make for all groups - European, African and East Asian.
 
 Finally, we get necessary files for ML algorithms.
 
-Code for Machine Learning is kinda large but it’s available here:
-
-[Google Colaboratory](https://colab.research.google.com/drive/1LepiYd-p9VvkcG22C3SScCYTrYaQaI2b?usp=sharing)
-
 Results tables can be seen in text.pdf
 ## SimulatePhenotypes from HapGen
 
